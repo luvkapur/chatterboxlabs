@@ -1,0 +1,10 @@
+{
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#212B52",
+        "titleBar.activeBackground": "#2F3D72",
+        "titleBar.activeForeground": "#F9FAFD"
+    },
+    "cSpell.words": [
+        "OPENAI"
+    ]
+}

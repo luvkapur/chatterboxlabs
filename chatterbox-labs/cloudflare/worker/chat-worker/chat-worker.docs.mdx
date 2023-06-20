@@ -1,0 +1,23 @@
+---
+description: A very basic Cloudflare worker
+labels: ['serverless', 'demo', 'apps']
+---
+
+Cloudflare Workers are serverless applications most often used to intercept and modify network requests (much like Service Workers in the browser).
+
+This CF Worker sets a function to be triggered on a 'fetch' event. The function returns a [Response](https://developers.cloudflare.com/workers/runtime-apis/response),
+containing `data.hello: 'world'`.
+
+To see this worker deployed, head over to: [teambit.cloud/chat-worker](https://teambit.cloud/chat-worker)
+
+To run the app (worker) locally, run the following command:
+
+```
+bit run chat-worker-worker
+```
+
+The output should display the port for the locally running app, like so:
+
+```
+chat-worker-worker app is running on http://localhost:3000
+```
