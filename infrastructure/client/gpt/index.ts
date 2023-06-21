@@ -1,1 +1,1 @@
-export { gpt } from './gpt';
+export { GPTClient } from './gpt';

@@ -1,15 +1,17 @@
-export class GPT {
+// @todo Remove this hard-coded key
+export const OPENAI_API_KEY = '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';
+export const OPENAI_API_URL = 'https://api.openai.com/v1/engines/text-davinci-003/completions'
+export class GPTClient {
   private readonly OPENAI_API_KEY: string;
 
   constructor() {
     // this.OPENAI_API_KEY = process.env.OPENAI_API_KEY as string;
-    // @todo Remove this hard-coded key
-    this.OPENAI_API_KEY = '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'
+    this.OPENAI_API_KEY = OPENAI_API_KEY;
   }
 
   public async processInput(input: string): Promise<string> {
     const response = await fetch(
-      "https://api.openai.com/v1/engines/davinci-codex/completions",
+      OPENAI_API_URL,
       {
         method: 'POST',
         headers: {

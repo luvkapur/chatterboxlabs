@@ -1,6 +1,13 @@
 import React from 'react';
-import { gpt } from './gpt';
+import { GPTClient } from './gpt';
 
 export function ReturnsCorrectValue() {
-  return <div>{gpt()}</div>;
+  const [value, setValue] = React.useState('');
+  React.useEffect(() => {
+    const client = new GPTClient();
+    client.processInput('Tell me a joke').then((res) => {
+      setValue(res);
+    });
+  }, [])
+  return <div>{value}</div>;
 }

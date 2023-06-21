@@ -11,15 +11,14 @@
 {
     "client/gpt": {
         "scope": "",
-        "version": "",
-        "defaultScope": "chatterbox-labs.infrastructure",
+        "version": "0.0.2",
+        "defaultScope": "chatterboxlabs.infrastructure",
         "mainFile": "index.ts",
         "rootDir": "infrastructure/client/gpt"
     },
     "cloudflare/worker/chat-worker": {
         "scope": "",
         "version": "",
-        "defaultScope": "chatterbox-labs.ai-chat",
         "mainFile": "index.ts",
         "rootDir": "chatterbox-labs/cloudflare/worker/chat-worker",
         "config": {
@@ -53,7 +52,7 @@
     "concierge": {
         "scope": "",
         "version": "",
-        "defaultScope": "chatterbox-labs.ai-concierge",
+        "defaultScope": "chatterboxlabs.ai-concierge",
         "mainFile": "index.ts",
         "rootDir": "ai-concierge/concierge",
         "config": {
@@ -66,7 +65,6 @@
     "ui/chat": {
         "scope": "",
         "version": "",
-        "defaultScope": "chatterbox-labs.ai-chat",
         "mainFile": "index.ts",
         "rootDir": "chatterbox-labs/ui/chat",
         "config": {
